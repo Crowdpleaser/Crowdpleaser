@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "user_signup";
 
 body {
   padding-top: 50px;
@@ -24,9 +25,17 @@ a.btn{
 .floatR{
   float: right !important;
 }
+
+.clear{
+  margin-bottom: 5px;
+  clear: both;
+}
 .clearboth{
   clear: both;
-  margin-top: 6px;
+}
+
+.bdr{
+  border-bottom: 1px solid lightgray;
 }
 
 .spacer{
