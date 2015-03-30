@@ -1,0 +1,48 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 50px;
+}
+
+a.btn{
+  color: #FFFFFF !important;
+}
+
+.textR{
+  text-align: right !important;
+}
+
+.textL{
+  text-align: left !important;
+}
+
+.floatL{
+  float: left !important;
+}
+
+.floatR{
+  float: right !important;
+}
+.clearboth{
+  clear: both;
+  margin-top: 6px;
+}
+
+.spacer{
+  clear: both;
+  margin-top: 5px;
+}
+.spacer10{
+  clear: both;
+  margin-top: 10px;
+}
+.spacer15{
+  clear: both;
+  margin-top: 15px;
+}
+.spacer20{
+  clear: both;
+  margin-top: 20px;
+}
+
