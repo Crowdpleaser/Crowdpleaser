@@ -1,0 +1,31 @@
+<%= form_for(@image) do |f| %>
+  <% if @image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@image.errors.count, "error") %> prohibited this image from being saved:</h2>
+      <ul>
+        <% @image.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row-fluid">
+    <%= f.label :image %>
+  </div>
+  <div class="clear"></div>
+  <div class="row-fluid images-row">
+  </div>
+  <div class="clear"></div>
+  <div class="row-fluid image-field-row">
+    <%= f.file_field :image, name:"image[image][0]", class:"image-field" %>
+  </div>
+  <div class="row-fluid spacer10">
+    <a href="javascript:void(0);" class="add_images">Add a New image</a>
+  </div>
+  <div class="clear spacer20"></div>
+  <div class="actions">
+    <%= f.submit class: 'btn btn-primary' %>
+    <!-- <a href="javascript:void(0);" class="upload-images btn btn-primary" > Upload Images </a> -->
+  </div>
+<% end %>

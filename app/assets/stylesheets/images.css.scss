@@ -1,0 +1,31 @@
+.image-block{
+  padding: 10px 0px;
+  min-height:400px;
+}
+
+.image-field{
+  margin: 5px 0px;
+  padding: 5px 0px;
+  width: 400px;
+}
+
+.uploading-images {
+  width:210px;
+  height:185px;
+  float: left;
+  .uploading-image {
+    width:200px;
+    height:175px;
+    margin:2px;
+    border:1px solid gray;
+    padding:2px;
+  }
+  .img-remove-icon{
+    margin-left:-20px;
+    vertical-align:middle;
+    padding-top:4px;
+    .glyphicon-remove{
+      color:red;
+    }
+  }
+}

@@ -9,7 +9,8 @@ Rails.application.routes.draw do
     passwords: "users/passwords",
     sessions: "users/sessions"
   }
-
+  resources :dashboards
+  resources :images
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,0 +1,19 @@
+<h1>Listing images</h1>
+<div class="bdr"></div>
+<% if @images.present? %>
+  <div class="row">
+    <% @images && @images.each do | image | %>
+      <div class="col-lg-4">
+        <%= image_tag image.image, style:"width:350px;height:250px;padding:5px;"%>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <div class="image-block">
+    <center>There is no images.</center>
+  </div>
+<% end %>
+<div class="bdr"></div>
+<br>
+
+<%= link_to 'New Image', new_image_path %>
